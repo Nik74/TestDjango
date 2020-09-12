@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Эпоха: {{ era.name }}</h1>
+    
+    <div style="margin-top:20px">
+        <h4>Книги по данной эпохе:</h4>
+        
+        <dl>
+            {% for book in era.book_set.all %}
+                <dt><a href="{% url 'era-detail' book.pk %}">{{ book }}</a>
+            {% endfor %}
+        </dl>
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+
+*** These modified files were found in JOE when it aborted on Mon Sep  7 21:08:11 2020
+*** JOE was aborted by UNIX signal 1
+
+*** Файл '(БезИмени)'
+x
+
+*** Файл '(БезИмени)'
+installed
+DATABASES
+TIME_ZONE
+isbn
+isbn
+isbn
+class Book
+
+*** Файл '(БезИмени)'
+models.py
+models.py
+models.py
+models.py
+admin.py
+admin.py
+admin.py
+admin.py
+models.py
+models.py
+models.py
+
+*** Файл '* Startup Log *'
+Обработка '/etc/joe/joerc'...Обработка '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc

@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+    <title>Тестовый сайт</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Домашняя страница библиотеки по Звездным Войнам</h1>
+
+    <p>Добро пожаловать на <em>Star Wars Library</em>, веб-сайт Django,разработанный в качестве тестового примера</p>
+
+    <h2>Имеющийся контент</h2>
+
+    <p>Библиотека имеет следующее количество записей:</p>
+    <ul>
+        <li><strong>Книги:</strong> {{ num_books }}</li>
+        <li><strong>Копии:</strong> {{ num_instances }}</li>
+        <li><strong>Доступные копии:</strong> {{num_instances_available }}</li>
+        <li><strong>Авторы:</strong> {{ num_authors }}</li>
+        <li><strong>Жанры:</strong> {{ num_genres }}</li>
+        <li><strong>Эпохи:</strong> {{ num_eras }}</li>
+    </ul>
+{% endblock %}

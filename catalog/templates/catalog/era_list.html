@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+    <h1>Список Эпох</h1>
+    
+    {%if era_list %}
+    
+        <ul>
+            {% for era in era_list %}
+                <li>
+                    <a href="{{ era.get_absolute_url }}">{{ era.name }}</a>                
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+            <p>На данный момент не добавлено ни одной эпохи.</p>    
+    {% endif %}
+
+{% endblock %}
